@@ -147,9 +147,12 @@
   }
 
   function sortByPrice(type) {
-    const sorted = [...currentList].sort((a, b) => type === 'asc' ? a.price - b.price : b.price - a.price);
-    renderFilteredProducts(sorted, 1);
+  const sorted = [...currentList].sort((a, b) => {
+    return type === 'asc' ? a.price - b.price : b.price - a.price;
+  });
+  renderFilteredProducts(sorted, 1);
   }
+
 
   function attachAddToCartEvents() {
     document.querySelectorAll('.add-to-cart').forEach(btn => {
