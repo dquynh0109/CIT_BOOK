@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng nhập - Nhà Sách Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1 class="logo">Nhà Sách Online</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="danhsach.html">Sản phẩm</a></li>
+        <li><a href="tintuc.html">Tin tức</a></li>
+        <li><a href="giohang.html">Giỏ hàng (<span id="cart-count">0</span>)</a></li>
+        <li><a href="dangnhap.html">Đăng nhập</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Đăng nhập / Đăng ký - Nhà Sách Online</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <main>
+    <section class="auth-container">
+      <div class="auth-tabs">
+        <button id="btn-login" class="active" onclick="showForm('login')">Đăng nhập</button>
+        <button id="btn-register" onclick="showForm('register')">Đăng ký</button>
+      </div>
+
+      <!-- Form đăng nhập -->
+      <form id="login-form" class="auth-form">
+        <h2>Đăng nhập</h2>
+        <label for="login-username">Tên đăng nhập:</label>
+        <input type="text" id="login-username" required>
+
+        <label for="login-password">Mật khẩu:</label>
+        <input type="password" id="login-password" required>
+
+        <button type="submit" class="btn-submit">Đăng nhập</button>
+      </form>
+
+      <!-- Form đăng ký -->
+      <form id="register-form" class="auth-form hidden">
+        <h2>Đăng ký tài khoản</h2>
+        <label for="register-username">Tên đăng nhập:</label>
+        <input type="text" id="register-username" required>
+
+        <label for="register-email">Email:</label>
+        <input type="email" id="register-email" required>
+
+        <label for="register-password">Mật khẩu:</label>
+        <input type="password" id="register-password" required>
+
+        <label for="register-confirm">Nhập lại mật khẩu:</label>
+        <input type="password" id="register-confirm" required>
+
+        <button type="submit" class="btn-submit">Tạo tài khoản</button>
+      </form>
+    </section>
+  </main>  
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <div class="lienhe">Về Chúng Tôi
+        <ul>
+          <li class="lienhe1">MỤC TIÊU</li>
+          <li class="lienhe1">QUYẾT TÂM</li>
+          <li class="lienhe1">SỨ MỆNH</li>
+        </ul>
+      </div>
+      <div class="lienhe">HỖ TRỌ KHÁCH HÀNG<ul class="hotro">
+          <li class="lienhe1"><i class="fa-solid fa-phone hotro1"></i> Hotline: 0357069735 </li>
+          <li class="lienhe1"><i class="fa-brands fa-facebook-messenger hotro1"></i>Các câu hỏi thường gặp</li>
+          <li class="lienhe1"><i class="fa-solid fa-envelope hotro1"></i>Tư Vấn Sản Phẩm</li></ul></div>
+      <div class="lienhe"></i> CHI NHÁNH<ul class="hotro">
+          <li class="lienhe1"><i class="fa-solid fa-location-dot hotro1"></i>HỒ CHÍ MINH</li>
+          <li class="lienhe1"><i class="fa-solid fa-location-dot hotro1"></i>ĐÀ NẴNG</li>
+          <li class="lienhe1"><i class="fa-solid fa-location-dot hotro1"></i>HÀ NỘI</li></ul></div>
+      <div class="lienhe">THANH TOÁN
+          <img class="thanhtoan" src="/assets/images/thanhtoan.webp" alt="">
+          <img class="thanhtoan2" src="/assets/images/thanhtoan2.webp" alt="">
+      </div></div>
+    <p>&copy; 2025 Nhà Sách Online. Mọi quyền đều được bảo lưu.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    function showForm(type) {
+      const loginForm = document.getElementById('login-form');
+      const registerForm = document.getElementById('register-form');
+      const btnLogin = document.getElementById('btn-login');
+      const btnRegister = document.getElementById('btn-register');
+
+      if (type === 'login') {
+        loginForm.classList.remove('hidden');
+        registerForm.classList.add('hidden');
+        btnLogin.classList.add('active');
+        btnRegister.classList.remove('active');
+      } else {
+        loginForm.classList.add('hidden');
+        registerForm.classList.remove('hidden');
+        btnLogin.classList.remove('active');
+        btnRegister.classList.add('active');
+      }
+    }
+  </script>
+
+</body>
+</html>

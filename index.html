@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ - Nhà Sách Online</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- SwiperJS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1 class="logo">Nhà Sách Online</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="danhsach.html">Sản phẩm</a></li>
+        <li><a href="tintuc.html">Tin tức</a></li>
+        <li><a href="giohang.html">Giỏ hàng (<span id="cart-count">0</span>)</a></li>
+        <li><a href="dangnhap.html">Đăng nhập</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Banner -->
+  <section class="hero-section">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://www.vppvinhanphat.vn/datafiles/40566/upload/images/banner1.jpg?t=1683261150" alt="Banner 1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://salt.tikicdn.com/ts/brickv2og/41/b9/6e/2b4997e782229eeb9bd223c030af375d.png" alt="Banner 2" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://bizweb.dktcdn.net/100/376/170/themes/750292/assets/slider_2.jpg?1693887815786" alt="Banner 3" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://lavidaplus.com.vn/wp-content/uploads/2024/11/banner-doc-sach-vi-tuong-lai-amo-vietnam-2018.jpg" alt="Banner 4" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://media.nxbtrithuc.com.vn/Picture/2025/3/12/image-20250312161817395.png" alt="Banner 5" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+  <main>
+    <section class="intro">
+      <h2>Chào mừng đến với Nhà Sách Online</h2>
+      <p>Khám phá hàng ngàn đầu sách hay và bổ ích ngay tại website của chúng tôi.</p>
+    </section>
+    <section class="featured">
+      <h2>Sách nổi bật</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="sanpham/sp1.jpg" alt="Tuổi thơ dữ dội">
+          <h3>Tuổi thơ dữ dội</h3>
+          <p class="price">50.000 đ</p>
+          <a href="chitiet.html?id=1" class="detail-link">Xem chi tiết</a>
+          <button class="add-to-cart" data-id="1" data-name="Tuổi thơ dữ dội" data-price="50000" data-img="sp1.jpg">Thêm vào giỏ</button>
+        </div>
+        <div class="product-card">
+          <img src="sanpham/sp2.jpg" alt="Số Đỏ">
+          <h3>Số Đỏ</h3>
+          <p class="price">45.000 đ</p>
+          <a href="chitiet.html?id=2" class="detail-link">Xem chi tiết</a>
+          <button class="add-to-cart" data-id="2" data-name="Số Đỏ" data-price="45000" data-img="sp2.jpg">Thêm vào giỏ</button>
+        </div>
+        <div class="product-card">
+          <img src="sanpham/sp3.jpg" alt="Hoàng Tử Bé">
+          <h3>Hoàng Tử Bé</h3>
+          <p class="price">60.000 đ</p>
+          <a href="chitiet.html?id=3" class="detail-link">Xem chi tiết</a>
+          <button class="add-to-cart" data-id="3" data-name="Hoàng Tử Bé" data-price="60000" data-img="sp3.jpg">Thêm vào giỏ</button>
+        </div>
+        <div class="product-card">
+          <img src="sanpham/sp4.jpg" alt="Đồi Thỏ">
+          <h3>Đồi Thỏ</h3>
+          <p class="price">55.000 đ</p>
+          <a href="chitiet.html?id=4" class="detail-link">Xem chi tiết</a>
+          <button class="add-to-cart" data-id="4" data-name="Đồi Thỏ" data-price="55000" data-img="sp4.jpg">Thêm vào giỏ</button>
+        </div>
+        <div class="product-card">
+          <img src="sanpham/sp5.jpg" alt="Đồi Thỏ">
+          <h3>Đồi Thỏ</h3>
+          <p class="price">55.000 đ</p>
+          <a href="chitiet.html?id=4" class="detail-link">Xem chi tiết</a>
+          <button class="add-to-cart" data-id="4" data-name="Đồi Thỏ" data-price="55000" data-img="sp4.jpg">Thêm vào giỏ</button>
+        </div>
+        <div class="product-card">
+          <img src="sanpham/sp6.jpg" alt="Đồi Thỏ">
+          <h3>Đồi Thỏ</h3>
+          <p class="price">55.000 đ</p>
+          <a href="chitiet.html?id=4" class="detail-link">Xem chi tiết</a>
+          <button class="add-to-cart" data-id="4" data-name="Đồi Thỏ" data-price="55000" data-img="sp4.jpg">Thêm vào giỏ</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <div class="lienhe">Về Chúng Tôi
+        <ul>
+          <li class="lienhe1">MỤC TIÊU</li>
+          <li class="lienhe1">QUYẾT TÂM</li>
+          <li class="lienhe1">SỨ MỆNH</li>
+        </ul>
+      </div>
+      <div class="lienhe">HỖ TRỌ KHÁCH HÀNG<ul class="hotro">
+          <li class="lienhe1"><i class="fa-solid fa-phone hotro1"></i> Hotline: 0357069735 </li>
+          <li class="lienhe1"><i class="fa-brands fa-facebook-messenger hotro1"></i>Các câu hỏi thường gặp</li>
+          <li class="lienhe1"><i class="fa-solid fa-envelope hotro1"></i>Tư Vấn Sản Phẩm</li></ul></div>
+      <div class="lienhe"></i> CHI NHÁNH<ul class="hotro">
+          <li class="lienhe1"><i class="fa-solid fa-location-dot hotro1"></i>HỒ CHÍ MINH</li>
+          <li class="lienhe1"><i class="fa-solid fa-location-dot hotro1"></i>ĐÀ NẴNG</li>
+          <li class="lienhe1"><i class="fa-solid fa-location-dot hotro1"></i>HÀ NỘI</li></ul></div>
+      <div class="lienhe">THANH TOÁN
+          <img class="thanhtoan" src="/assets/images/thanhtoan.webp" alt="">
+          <img class="thanhtoan2" src="/assets/images/thanhtoan2.webp" alt="">
+      </div></div>
+    <p>&copy; 2025 Nhà Sách Online. Mọi quyền đều được bảo lưu.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  
+</body>
+</html>

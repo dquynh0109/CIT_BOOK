@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danh sách sản phẩm - Nhà Sách Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1 class="logo">Nhà Sách Online</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="danhsach.html">Sản phẩm</a></li>
+        <li><a href="tintuc.html">Tin tức</a></li>
+        <li><a href="giohang.html">Giỏ hàng (<span id="cart-count">0</span>)</a></li>
+        <li><a href="dangnhap.html">Đăng nhập</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Main content -->
+  <main class="catalog-layout">
+    <aside class="filter-sidebar">
+      <button onclick="filterCategory('all')">Tất cả</button>
+      <button onclick="filterCategory('thieunhi')">Thiếu nhi</button>
+      <button onclick="filterCategory('vanhoc')">Văn học</button>
+      <button onclick="filterCategory('tamly')">Tâm lý học</button>
+      <button onclick="filterCategory('kynang')">Kỹ năng sống</button>
+      <button onclick="sortByPrice('asc')">⬆️ Giá tăng dần</button>
+      <button onclick="sortByPrice('desc')">⬇️ Giá giảm dần</button>
+    </aside>
+  
+    <section class="product-area">
+      <h2>Danh sách Sách</h2>
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+  </main>
+  <div id="pagination" class="pagination"></div>
+
+  
+  
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <div class="lienhe">Về Chúng Tôi
+        <ul>
+          <li class="lienhe1">MỤC TIÊU</li>
+          <li class="lienhe1">QUYẾT TÂM</li>
+          <li class="lienhe1">SỨ MỆNH</li>
+        </ul>
+      </div>
+      <div class="lienhe">HỖ TRỌ KHÁCH HÀNG<ul class="hotro">
+          <li class="lienhe1"><i class="fa-solid fa-phone hotro1"></i> Hotline: 0357069735 </li>
+          <li class="lienhe1"><i class="fa-brands fa-facebook-messenger hotro1"></i>Các câu hỏi thường gặp</li>
+          <li class="lienhe1"><i class="fa-solid fa-envelope hotro1"></i>Tư Vấn Sản Phẩm</li></ul></div>
+      <div class="lienhe"></i> CHI NHÁNH<ul class="hotro">
+          <li class="lienhe1"><i class="fa-solid fa-location-dot hotro1"></i>HỒ CHÍ MINH</li>
+          <li class="lienhe1"><i class="fa-solid fa-location-dot hotro1"></i>ĐÀ NẴNG</li>
+          <li class="lienhe1"><i class="fa-solid fa-location-dot hotro1"></i>HÀ NỘI</li></ul></div>
+      <div class="lienhe">THANH TOÁN
+          <img class="thanhtoan" src="/assets/images/thanhtoan.webp" alt="">
+          <img class="thanhtoan2" src="/assets/images/thanhtoan2.webp" alt="">
+      </div></div>
+    <p>&copy; 2025 Nhà Sách Online. Mọi quyền đều được bảo lưu.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
